@@ -1,0 +1,253 @@
+[Main]
+FileType=CIR
+Version=12.00
+Program=Micro-Cap
+Component Version=10.00
+Shape Version=11.00
+Screen=1920,1080
+MCAPVersion=12.2.0.3
+Key ID=Demo
+NLCnt=58
+TXCnt=1
+
+[shapedef]
+Name=100
+Block=0,8,56,88,0,10
+BlockLine="Line",-16,16
+BlockLine="Line",-16,32
+BlockLine="Line",-16,48
+BlockLine="Line",-16,64
+BlockLine="Line",-16,80
+BlockLine="Line",72,16
+BlockLine="Line",72,32
+BlockLine="Line",72,48
+BlockLine="Line",72,64
+BlockLine="None",72,80
+FColor=None
+
+[shapedef]
+Name=Battery
+Line=0,0,22,0
+Line=22,-3,22,3
+Line=26,-7,26,7
+Line=26,0,48,0
+Current=32,8,16,8
+
+[shapedef]
+Name=Capacitor
+Line=0,0,22,0
+Line=22,-8,22,8
+Line=26,-8,26,8
+Line=26,0,48,0
+Current=32,12,16,12
+
+[shapedef]
+Name=Diode
+Root="Diode.root",0,0,0
+
+[shapedef]
+Name=Diode.root
+Line=0,0,20,0
+Line=28,0,48,0
+Rectangle=18,-8,20,8
+PolyClosed=3
+PolyLine=20,0
+PolyLine=28,-8
+PolyLine=28,8
+Current=32,16,16,16
+
+[shapedef]
+Name=Ground
+Line=0,0,12,0
+Line=12,-8,12,8
+Line=18,-4,18,4
+Line=24,0,24,0
+
+[shapedef]
+Name=Inductor
+Line=42,0,48,0
+Line=0,0,5,0
+Arc=5,-7,17,7 , 11,-7,5,0
+Arc=13,-7,25,7 , 19,-7,13,0
+Arc=29,-7,41,7 , 35,-7,29,0
+Arc=21,-7,33,7 , 27,-7,21,0
+Arc=6,-7,18,7 , 18,0,12,-7
+Arc=14,-7,26,7 , 26,0,20,-7
+Arc=22,-7,34,7 , 34,0,28,-7
+Arc=30,-7,42,7 , 42,0,36,-7
+Line=11,-7,12,-7
+Line=19,-7,20,-7
+Line=27,-7,28,-7
+Line=35,-7,36,-7
+Arc=13,-4,17,2 , 13,-1,15,2
+Arc=29,-4,33,2 , 29,-1,31,2
+Arc=21,-4,25,2 , 21,-1,23,2
+Arc=14,-4,18,2 , 16,2,18,-1
+Arc=30,-4,34,2 , 32,2,34,-1
+Arc=22,-4,26,2 , 24,2,26,-1
+Line=15,2,16,2
+Line=23,2,24,2
+Line=31,2,32,2
+Line=5,5,9,5
+Line=41,5,41,9
+Line=39,7,43,7
+Current=32,8,16,8
+
+[shapedef]
+Name=Resistor
+PolyOpen=12
+PolyLine=0,0
+PolyLine=0,0
+PolyLine=12,0
+PolyLine=14,-4
+PolyLine=18,4
+PolyLine=22,-4
+PolyLine=26,4
+PolyLine=30,-4
+PolyLine=34,4
+PolyLine=36,0
+PolyLine=48,0
+PolyLine=48,0
+Current=32,8,16,8
+
+[compdef]
+Name=Ground
+Definition=Ground
+Shape=Ground
+Mask=1793
+Used=257
+memo=Ground
+Label Offset=0,0,0,0
+PinCnt=1
+Pin="PinA",0,0,-3,-7
+
+[compdef]
+Name=Inductor
+Definition=Inductor
+Shape=Inductor
+Mask=7681
+Used=28
+memo=Inductor
+Label Offset=18,9,11,12
+PinCnt=2
+Pin="Plus",6,0,-5,-9
+Pin="Minus",0,0,-3,-9
+
+[compdef]
+Name=Capacitor
+Definition=Capacitor
+Shape=Capacitor
+Mask=6401
+Used=25
+memo=Capacitor
+Label Offset=16,12,12,12
+PinCnt=2
+Pin="Plus",6,0,-3,-5
+Pin="Minus",0,0,-14,-5
+
+[compdef]
+Name=Resistor
+Definition=Resistor
+Shape=Resistor
+Mask=6913
+Used=152
+memo=Resistor
+Label Offset=18,6,8,11
+PinCnt=2
+Pin="Plus",6,0,-10,-4
+Pin="Minus",0,0,-14,-4
+
+[compdef]
+Name=1N4004
+Definition=Diode
+Shape=Diode
+Mask=4224
+Used=1
+memo=General Purpose Rectifier Vr=400V Io=1A
+Label Offset=18,10,12,12
+PinCnt=2
+Pin="Anode",6,0,-13,-8
+Pin="Cathode",0,0,-27,-8
+
+[compdef]
+Name=LM2575
+Definition=Subckt
+Shape=100
+Mask=30849
+Used=2
+memo=The LM2575 provides all the active functions needed for a step-down (buck) switching regulator in an integrated
+Label Offset=0,0,0,0
+PinCnt=5
+Pin="VIN",a,-2,2
+Pin="OUT",a,9,8
+Pin="ON_OFF_N",a,-2,6
+Pin="FB",a,9,4,1,0
+Pin="GND",a,-2,10
+
+[compdef]
+Name=Battery
+Definition=Battery
+Shape=Battery
+Mask=7425
+Used=52
+memo=Battery
+Label Offset=19,7,10,13
+PinCnt=2
+Pin="Plus",6,0,-4,-5
+Pin="Minus",0,0,-10,-5
+
+[Circuit]
+Window Placement=2,3, -1,-1, -8,-31, 156,156,1843,649
+Default Object=Color=#000080
+Default Object Font=Height=-15,FStyle=0,Color=#000080,Name=Arial
+Default Object Apply Border To Text=No
+Default Object Apply Fill To Text=No
+Default Object GridSnap=No
+NodeVoltageFormat=3
+CurrentFormat=3
+PowerFormat=3
+PathDelayFormat=3
+WarningFormat=3
+GridTextFormulaFormat=3
+Window Placement in Transient Analysis=2,3, -1,-1, -8,-31, 208,208,1895,701
+Window Placement in DC Analysis=2,3, -1,-1, -8,-31, 156,156,1843,649
+SpiceType=AMBIGUOUS
+Title_Block_Border=None
+Title_Block=False
+Show Nodes=True
+Show Voltages=False
+Show Current=False
+Show Power=False
+Show Condition=False
+Show Pin Connections=False
+Show Connection Warnings=False
+Show Cross=False
+Show Attribute Text=True
+Show Grid Text=False
+
+[Comp]
+Name=Ground
+Px=432,440
+Rot=7
+
+[Comp]
+Name=Inductor
+Px=560,328
+Rot=6
+
+[Attr]
+ON=-33,9,PART
+V=L1
+Style=8192
+
+[Attr]
+ON=-50,23,INDUCTANCE
+V=100u
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Na

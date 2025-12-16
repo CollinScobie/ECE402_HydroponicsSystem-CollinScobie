@@ -1,0 +1,752 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.3 (64 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                 Transient Analysis of Buck Converter 402                 ***
+***                           12/9/2025 3:26:40 PM                           ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           .03
+Output Start Time (tstart) 0
+Maximum Time Step          0
+Number of Points           501
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node                  Voltage  Node                  Voltage 
+1                     74.748u  VOUT                  74.748u 
+3                     12.000   4                     27.684u 
+X2.X_S1.3             12.000   X2.X_U21.S         6.166E-032 
+X2.VIN1               12.000   X2.X_U_U23.INP        11.972  
+X2.X_U_U23.Y      -1.972E-031  X2.X_U_U22.2       8.546E-027 
+X2.X_U_U23.INM        12.000   X2.X_OSC_U23.INM       0.000  
+X2.X_U1.INP          100.000m  X2.X_OSC_U25.INP      30.444n 
+X2.X_U2.A              1.000   X2.FB1                27.684u 
+X2.X_U2.B              1.000   X2.X_U2.C         -9.404E-038 
+X2.X_U21.QB            1.000   X2.REF                 1.230  
+X2.X_U2.Y          3.044E-040  X2.X_OSC_U27.Y    -9.991E-049 
+X2.X_S1.1         -6.119E-049  X2.X_S1.4            646.875m 
+X2.EA_N00312         -61.187   X2.EA_N00234           6.146m 
+X2.EA_N01722         -61.187   X2.EA_N00344         -61.187  
+X2.X_OSC_U23.INP       1.300   X2.X_OSC_S1.1          1.000  
+X2.X_OSC_U27.B         1.000   X2.X_OSC_U26.1    -9.991E-033 
+X2.X_OSC_U24.INM     790.000m  X2.X_OSC_U24.Y     2.335E-033 
+X2.X_OSC_U21.INP      30.444n  X2.X_OSC_U20.1     5.709E-027 
+X2.X_OSC_U20.2         0.000   X2.X_OSC_U21.INM       1.550  
+X2.X_OSC_U21.HYS     800.000m  X2.X_OSC_U21.OUT   8.891E-033 
+X2.OSC_TRF         8.891E-033  X2.X_OSC_U27.A    -9.991E-033 
+X2.OSC_FREQ           30.444m  X2.X_OSC_U25.INM       1.683  
+X2.X_U21.QINT         -5.000u  X2.X_U21.MY5           1.000  
+X2.X_U21.MYVSS         0.000   X2.X_U21.X3.A         -5.000u 
+X2.X_U21.X3.Y     -9.404E-038  X2.X_U21.QBR           1.000  
+X2.X_OSC_U21.INP1      0.000   X2.X_OSC_U21.INM1      1.550  
+X2.X_OSC_U21.INP2 -8.891E-049  X2.X_OSC_U21.1     8.891E-033 
+
+DC Operating Point Inductor Current
+===================================
+         Inductor     Current 
+L1                    11.353u 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                          D3              X2.X_U24.D1
+Using model:                   1N4004             X2.X_U24.DD1
+
+Capacitance Terms:
+CAP                           48.028p               1.000E-023
+
+Current Terms:
+ID                            -6.908p                 -12.001p
+
+Resistance Terms:
+REQ                         10.828MEG                   1.000T
+
+Voltage Terms:
+VD                           -74.748u                 -12.000 
+
+Power DC Terms:
+PD                             0.516f                 144.010p
+PS                             0.000                    0.000 
+
+DC Pin Currents:
+Id                            -6.908p                 -12.001p
+
+Condition:
+State                             OFF                      OFF
+
+Device Variables:
+area                           1.000                    1.000 
+ic                             0.000                    0.000 
+
+
+Instance:               X2.X_U_U22.D1           X2.X_U21.D_D10
+Using model:           X2.X_U_U22.DD1            X2.X_U21.D_D1
+
+Capacitance Terms:
+CAP                        1.387E-023               1.000E-023
+
+Current Terms:
+ID                        -8.546E-039                  -1.001p
+
+Resistance Terms:
+REQ                          721.170G                   1.000T
+
+Voltage Terms:
+VD                        -8.546E-027                  -1.000 
+
+Power DC Terms:
+PD                         7.304E-065                   1.001p
+PS                             0.000                    0.000 
+
+DC Pin Currents:
+Id                        -8.546E-039                  -1.001p
+
+Condition:
+State                             OFF                      OFF
+
+Device Variables:
+area                           1.000                    1.000 
+ic                             0.000                    0.000 
+
+
+Instance:              X2.X_U21.D_D11          X2.X_OSC_U26.D1
+Using model:            X2.X_U21.D_D1         X2.X_OSC_U26.DD1
+
+Capacitance Terms:
+CAP                        1.387E-023               1.387E-023
+
+Current Terms:
+ID                             0.007f               1.000E-050
+
+Resistance Terms:
+REQ                          720.781G                 721.170G
+
+Voltage Terms:
+VD                             5.000u               5.474E-048
+
+Power DC Terms:
+PD                         3.468E-023               5.474E-098
+PS                             0.000                    0.000 
+
+DC Pin Currents:
+Id                             0.007f               1.000E-050
+
+Condition:
+State                             OFF                      OFF
+
+Device Variables:
+area                           1.000                    1.000 
+ic                             0.000                    0.000 
+
+
+Instance:             X2.X_OSC_U20.D1
+Using model:         X2.X_OSC_U20.DD1
+
+Capacitance Terms:
+CAP                        1.387E-023
+
+Current Terms:
+ID                         5.709E-039
+
+Resistance Terms:
+REQ                          721.170G
+
+Voltage Terms:
+VD                         5.709E-027
+
+Power DC Terms:
+PD                         3.259E-065
+PS                             0.000 
+
+DC Pin Currents:
+Id                         5.709E-039
+
+Condition:
+State                             OFF
+
+Device Variables:
+area                           1.000 
+ic                             0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                           R2                       R1
+V                              47.064u                  27.684u
+Power DC Terms:
+PD                              1.303p                 766.427f
+
+DC Pin Currents:
+Ir                             27.684n                  27.684n
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                           R3                X2.R_U_R3
+V                              74.748u                 113.531n
+Power DC Terms:
+PD                            846.554p                   1.289p
+
+DC Pin Currents:
+Ir                             11.325u                  11.353u
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                    X2.R_U_R4                  X2.R_R5
+V                          -8.546E-027                   0.000 
+Power DC Terms:
+PD                          7.304E-058                   0.000 
+
+DC Pin Currents:
+Ir                         -8.546E-032                   0.000 
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                   X2.R_EA_R1               X2.R_EA_R2
+V                               1.224                   61.193 
+Power DC Terms:
+PD                              2.496m                 124.818m
+
+DC Pin Currents:
+Ir                              2.040m                   2.040m
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                   X2.R_EA_R3                  X2.R_R4
+V                               0.000                   12.000 
+Power DC Terms:
+PD                              0.000                  144.000n
+
+DC Pin Currents:
+Ir                              0.000                   12.000n
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                  X2.R_OSC_R2              X2.R_OSC_R4
+V                               0.000               -5.474E-048
+Power DC Terms:
+PD                              0.000                5.064E-098
+
+DC Pin Currents:
+Ir                              0.000               -9.252E-051
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                  X2.R_OSC_R3           X2.X_U_U23.RYP
+V                          -5.709E-027              -1.972E-031
+Power DC Terms:
+PD                          3.046E-058               3.889E-068
+
+DC Pin Currents:
+Ir                         -5.336E-032              -1.972E-037
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                  X2.X_U1.RYP           X2.X_U21.RQINT
+V                               1.000                   -5.000u
+Power DC Terms:
+PD                              1.000u               2.500E-023
+
+DC Pin Currents:
+Ir                              1.000u                  -0.005f
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                 X2.X_U21.RQQ             X2.X_U21.RQB
+V                               0.000                    0.000 
+Power DC Terms:
+PD                              0.000                    0.000 
+
+DC Pin Currents:
+Ir                              0.000                    0.000 
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                 X2.X_U25.RYP            X2.X_S1.RS_S1
+V                          -6.119E-049              -6.119E-049
+Power DC Terms:
+PD                          3.744E-103               3.744E-106
+
+DC Pin Currents:
+Ir                         -6.119E-055              -6.119E-058
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:             X2.X_OSC_U23.RYP         X2.X_OSC_U24.RYP
+V                               1.000                2.335E-033
+Power DC Terms:
+PD                              1.000u               5.452E-072
+
+DC Pin Currents:
+Ir                              1.000u               2.335E-039
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:        X2.X_OSC_S1.RS_OSC_S1         X2.X_OSC_U22.RYP
+V                               1.000                    1.000 
+Power DC Terms:
+PD                              1.000n                   1.000u
+
+DC Pin Currents:
+Ir                              1.000n                   1.000u
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:              X2.X_OSC_U21.R1       X2.X_OSC_U21.RINP1
+V                               0.000                    0.000 
+Power DC Terms:
+PD                              0.000                    0.000 
+
+DC Pin Currents:
+Ir                              0.000                    0.000 
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:             X2.X_OSC_U25.RYP         X2.X_OSC_U27.RYP
+V                          -9.991E-033              -9.991E-049
+Power DC Terms:
+PD                          9.982E-071               9.982E-103
+
+DC Pin Currents:
+Ir                         -9.991E-039              -9.991E-055
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+Instance:                  X2.X_U2.RYP          X2.X_U21.X3.RYP
+V                           3.044E-040              -9.404E-038
+Power DC Terms:
+PD                          9.268E-086               8.843E-081
+
+DC Pin Currents:
+Ir                          3.044E-046              -9.404E-044
+
+Device Variables:
+tc1                             0.000                    0.000 
+tc2                             0.000                    0.000 
+
+
+
+Operating Point for Devices of Type Inductor
+============================================
+Instance:                           L1
+V                               0.000 
+Power DC Terms:
+PS                              0.000 
+
+DC Pin Currents:
+Il                             11.353u
+
+Device Variables:
+ic                              0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                         COUT                      CIN
+V                              74.748u                  12.000 
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:                           C1                       C2
+V                             -74.748u                  74.748u
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:                           C3                       C4
+V                              74.748u                  74.748u
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:                    X2.C_U_C2               X2.C_EA_C1
+V                           8.546E-027                  61.187 
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:                  X2.C_OSC_C7              X2.C_OSC_C6
+V                           9.991E-033               5.709E-027
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:                  X2.C_OSC_C5              X2.C_OSC_C1
+V                           8.891E-033                 -30.444n
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:               X2.X_U_U23.CYP              X2.X_U1.CYP
+V                          -1.972E-031                   1.000 
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:               X2.X_U21.CQINT         X2.X_U21.CDUMMY1
+V                              -5.000u              -9.404E-038
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:             X2.X_U21.CDUMMY2         X2.X_OSC_U23.CYP
+V                               1.000                    1.000 
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:             X2.X_OSC_U24.CYP          X2.X_OSC_U21.C1
+V                           2.335E-033               8.891E-033
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+Instance:             X2.X_OSC_U25.CYP          X2.X_U21.X3.CYP
+V                          -9.991E-033              -9.404E-038
+Power DC Terms:
+PS                              0.000                    0.000 
+
+DC Pin Currents:
+Ic                              0.000                    0.000 
+
+Device Variables:
+ic                              0.000                    0.000 
+
+
+
+Operating Point for Devices of Type S
+=====================================
+Instance:                 X2.X_S1.S_S1     X2.X_OSC_S1.S_OSC_S1
+Using model:               X2.X_S1._S1      X2.X_OSC_S1._OSC_S1
+Power DC Terms:
+PD                            128.893u               9.268E-025
+
+DC Pin Currents:
+ISource                        11.353u                   0.030f
+
+Condition:
+State                              OFF                      OFF
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:                 X2.E_U_ABM5                X2.E_U_E6
+V                          6.166E-032                  12.000 
+Power DC Terms:
+PG                             0.000                    0.000 
+
+DC Pin Currents:
+ISource                        0.000                    0.000 
+
+
+Instance:                     X2.E_E6                  X2.E_E5
+V                              0.000                   27.684u
+Power DC Terms:
+PG                             0.000                    0.000 
+
+DC Pin Currents:
+ISource                        0.000                    0.000 
+
+
+Instance:                     X2.E_E4             X2.E_EA_ABM1
+V                             12.000                  100.000m
+Power DC Terms:
+PG                             0.000                    0.000 
+
+DC Pin Currents:
+ISource                        0.000                    0.000 
+
+
+Instance:               X2.E_OSC_ABM4            X2.E_OSC_ABM2
+V                              1.000                    0.000 
+Power DC Terms:
+PG                             0.000                    0.000 
+
+DC Pin Currents:
+ISource                        0.000                    0.000 
+
+
+Instance:              X2.G_OSC_ABMI2            X2.E_OSC_ABM3
+V                            -30.444n                  30.444m
+Power DC Terms:
+PG                           926.837p                   0.000 
+
+DC Pin Currents:
+ISource                       30.444m                   0.000 
+
+
+Instance:               X2.E_OSC_ABM1          X2.X_U_U23.ECMP
+V                             30.444n              -1.972E-031
+Power DC Terms:
+PG                             0.000                3.230E-067
+
+DC Pin Currents:
+ISource                        0.000                1.638E-036
+
+
+Instance:                X2.X_U1.ECMP              X2.X_U21.GQ
+V                              1.000                    5.000u
+Power DC Terms:
+PG                             1.000u                  25.000u
+
+DC Pin Currents:
+ISource                       -1.000u                  -5.000 
+
+
+Instance:                X2.X_U21.EQB             X2.X_U25.EOR
+V                              1.000               -6.119E-049
+Power DC Terms:
+PG                             0.000                3.748E-103
+
+DC Pin Currents:
+ISource                        0.000                6.125E-055
+
+
+Instance:           X2.X_OSC_U23.ECMP        X2.X_OSC_U24.ECMP
+V                              1.000                2.335E-033
+Power DC Terms:
+PG                             1.001u               5.452E-072
+
+DC Pin Currents:
+ISource                       -1.001u              -2.335E-039
+
+
+Instance:          X2.X_OSC_U22.ENAND        X2.X_OSC_U21.EHYS
+V                              1.000                8.891E-049
+Power DC Terms:
+PG                             1.000u                   0.000 
+
+DC Pin Currents:
+ISource                       -1.000u                   0.000 
+
+
+Instance:           X2.X_OSC_U21.EOUT        X2.X_OSC_U25.ECMP
+V                          8.891E-033              -9.991E-033
+Power DC Terms:
+PG                        -1.217E-080               9.982E-071
+
+DC Pin Currents:
+ISource                    1.368E-048               9.991E-039
+
+
+Instance:           X2.X_OSC_U27.EAND             X2.X_U2.ENOR
+V                         -9.991E-049               3.044E-040
+Power DC Terms:
+PG                         9.982E-103               9.268E-086
+
+DC Pin Currents:
+ISource                    9.991E-055              -3.044E-046
+
+
+Instance:            X2.X_U21.X3.EBUF
+V                         -9.404E-038
+Power DC Terms:
+PG                         8.843E-081
+
+DC Pin Currents:
+ISource                    9.404E-044
+
+
+
+Operating Point for Devices of Type SPICE Poly
+==============================================
+Instance:                  X2.E_EA_E2               X2.E_EA_E1
+V                            -61.187                  -61.187 
+Power DC Terms:
+PG                           124.806m                   0.000 
+
+DC Pin Currents:
+ISource                        2.040m                   0.000 
+
+
+Instance:                 X2.X_U21.EQ         X2.X_OSC_U21.EIN
+V                             -5.000u                  -1.550 
+Power DC Terms:
+PG                             0.000                    0.000 
+
+DC Pin Currents:
+ISource                        0.000                    0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                          V1                X2.V_U_V2
+V                             12.000                   28.000m
+Power DC Terms:
+PG                           136.382u                   0.000 
+
+DC Pin Currents:
+ISource                      -11.365u                   0.000 
+
+
+Instance:                     X2.V_V1                  X2.V_V2
+V                              1.230                  646.800m
+Power DC Terms:
+PG                             2.509m                  -7.343u
+
+DC Pin Currents:
+ISource                       -2.040m                  11.353u
+
+
+Instance:                 X2.V_OSC_V5              X2.V_OSC_V6
+V                              1.300                  790.000m
+Power DC Terms:
+PG                             0.000                    0.000 
+
+DC Pin Currents:
+ISource                        0.000                    0.000 
+
+
+Instance:                 X2.V_OSC_V7              X2.V_OSC_V3
+V                              1.683                    1.550 
+Power DC Terms:
+PG                             0.000                    0.000 
+
+DC Pin Currents:
+ISource                        0.000                    0.000 
+
+
+Instance:                 X2.V_OSC_V4              X2.X_U21.V1
+V                            800.000m                   1.000 
+Power DC Terms:
+PG                             0.000                  998.313f
+
+DC Pin Currents:
+ISource                        0.000                 -998.313f
+
+
+Instance:                 X2.X_U21.V2
+V                              0.000 
+Power DC Terms:
+PG                             0.000 
+
+DC Pin Currents:
+ISource                       -0.007f
+
+
