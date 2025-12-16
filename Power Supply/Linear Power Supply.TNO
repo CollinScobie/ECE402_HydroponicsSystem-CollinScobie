@@ -1,0 +1,174 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.3 (64 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                Transient Analysis of Linear Power Supply                 ***
+***                          12/16/2025 6:15:56 AM                           ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           .2
+Output Start Time (tstart) 0
+Maximum Time Step          0
+Number of Points           501
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          On
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   2             0.000   3            -0.001f 
+4            -0.001f  5            -0.001f  6        -4.854E-021 
+7        -4.649E-021 
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current  Inductor     Current  Inductor     Current 
+X1.LP    -1.684E-030  X1.LS1   -8.263E-030  X1.LS2   -7.420E-030 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                D4             D3             D2             D1
+Using model:        MBR1645        MBR1645        MBR1645        MBR1645
+
+Capacitance Terms:
+CAP                 10.000p        10.000p        10.000p        10.000p
+
+Current Terms:
+ID              -8.374E-031     8.422E-031     8.422E-031    -8.374E-031
+
+Resistance Terms:
+REQ                959.587        959.587        959.587        959.587 
+
+Voltage Terms:
+VD                  -0.001f         0.001f         0.001f        -0.001f
+
+Power DC Terms:
+PD               7.012E-049     7.094E-049     7.094E-049     7.012E-049
+PS                   0.000          0.000          0.000          0.000 
+
+DC Pin Currents:
+Id              -8.374E-031     8.422E-031     8.422E-031    -8.374E-031
+
+Condition:
+State                   OFF            OFF            OFF            OFF
+
+Device Variables:
+area                 1.000          1.000          1.000          1.000 
+ic                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R             R2          RLOAD             R1
+V                     0.000     -4.649E-021    -4.649E-021     2.047E-022
+Power DC Terms:
+PD                    0.000      3.603E-045     8.647E-042     1.904E-043
+
+DC Pin Currents:
+Ir                    0.000     -7.749E-025    -1.860E-021     9.303E-022
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:                 R7      X1.K0.RPM       X1.K0.RP       X1.K0.RM
+V                 2.047E-022         0.001f         0.000          0.000 
+Power DC Terms:
+PD                1.904E-043     7.094E-049         0.000          0.000 
+
+DC Pin Currents:
+Ir                9.303E-022     8.422E-031         0.000          0.000 
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:          X1.K0.RPM       X1.K0.RP       X1.K0.RM      X1.K0.RPM
+V                     0.001f         0.000          0.000          0.000 
+Power DC Terms:
+PD                7.094E-049         0.000          0.000          0.000 
+
+DC Pin Currents:
+Ir                8.422E-031         0.000          0.000          0.000 
+
+Device Variables:
+tc1                   0.000          0.000          0.000          0.000 
+tc2                   0.000          0.000          0.000          0.000 
+
+
+Instance:           X1.K0.RP       X1.K0.RM
+V                     0.000          0.000 
+Power DC Terms:
+PD                    0.000          0.000 
+
+DC Pin Currents:
+Ir                    0.000          0.000 
+
+Device Variables:
+tc1                   0.000          0.000 
+tc2                   0.000          0.000 
+
+
+
+Operating Point for Devices of Type Inductor
+============================================
+Instance:              X1.LP         X1.LS1         X1.LS2
+V                     0.000          0.000          0.000 
+Power DC Terms:
+PS                    0.000          0.000          0.000 
+
+DC Pin Currents:
+Il               -1.684E-030    -8.263E-030    -7.420E-030
+
+Device Variables:
+ic                    0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                 C1             C2             C3             C4
+V                 4.854E-021     4.649E-021     4.649E-021     4.649E-021
+Power DC Terms:
+PS                    0.000          0.000          0.000          0.000 
+
+DC Pin Currents:
+Ic                    0.000          0.000          0.000          0.000 
+
+Device Variables:
+ic                    0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1
+V                    0.000 
+Power DC Terms:
+PG                   0.000 
+
+DC Pin Currents:
+ISource              0.000 
+
+

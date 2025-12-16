@@ -1,0 +1,22 @@
+** Profile: "SCHEMATIC1-LED Driver SIM 26vf"  [ C:\Users\Collin Scobie\OneDrive\Fall 2025\ECE 402\PSpice projects\LED Driver\ece 402 led driver-PSpiceFiles\SCHEMATIC1\LED Driver SIM 26vf.sim ] 
+
+** Creating circuit file "LED Driver SIM 26vf.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../led_model.lib" 
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

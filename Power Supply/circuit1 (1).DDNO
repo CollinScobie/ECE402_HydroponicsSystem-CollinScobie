@@ -1,0 +1,95 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.0 (64 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                        Dynamic DC of circuit1 (1)                        ***
+***                           10/6/2025 3:12:06 PM                           ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1        -3.066E-019  2        -3.066E-019  3         1.537E-020 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                D1             D2             D3             D4
+Using model:       STPS1545       STPS1545       STPS1545       STPS1545
+
+Capacitance Terms:
+CAP                  1.824n         1.824n         1.824n         1.824n
+
+Current Terms:
+ID              -3.219E-031     3.066E-031     3.066E-031    -3.219E-031
+
+Resistance Terms:
+REQ                  3.395K         3.395K         3.395K         3.395K
+
+Voltage Terms:
+VD              -3.219E-019     3.066E-019     3.066E-019    -3.219E-019
+
+Power DC Terms:
+PD               1.036E-049     9.397E-050     9.397E-050     1.036E-049
+PS                   0.000          0.000          0.000          0.000 
+
+DC Pin Currents:
+Id              -3.219E-031     3.066E-031     3.066E-031    -3.219E-031
+
+Condition:
+State                   OFF            OFF            OFF            OFF
+
+Device Variables:
+area                 1.000          1.000          1.000          1.000 
+ic                   0.000          0.000          0.000          0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                 R1
+V                 1.537E-020
+Power DC Terms:
+PD                1.181E-042
+
+DC Pin Currents:
+Ir                7.686E-023
+
+Device Variables:
+tc1                   0.000 
+tc2                   0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                 C1
+V                -1.537E-020
+Power DC Terms:
+PS                    0.000 
+
+DC Pin Currents:
+Ic                    0.000 
+
+Device Variables:
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                V1
+V                    0.000 
+Power DC Terms:
+PG                   0.000 
+
+DC Pin Currents:
+ISource         -7.396E-032
+
+

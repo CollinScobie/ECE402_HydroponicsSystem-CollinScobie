@@ -1,0 +1,102 @@
+(ExpressProject "TPS92512_TRANS"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "23.1-2024 S001-[12/10/14]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\tps92512dgq_trans.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\tps92512_trans.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tps92512_trans-pspicefiles\startup\trans.sim"
+        (DisplayName "STARTUP-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tps92512_trans-pspicefiles\steady_state\trans.sim"
+        (DisplayName "STEADY_STATE-trans")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\tps92512_trans-pspicefiles\startup\trans.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\tps92512_trans.lib"
+        (Type "PSpiceLibrary")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (TPS92512DGQ_TRANS
+      (FullPartName "TPS92512DGQ_TRANS.Normal")
+      (LibraryName
+         "C:\ELABTRANS_WS\ELABTRANS_DS\PART_NUMBERS\TPS92512\RELEASE_SANKALP\PSPICE\TPS92512_PSPICE_TRANS\TPS92512DGQ_TRANS.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0")))
+  (ISPCBBASICLICENSE "false")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\colli\OneDrive\Fall 2025\ECE 402\LED Driver\slum449\TPS92512_PSPICE_TRANS\tps92512_trans.dsn")
+      (Path "Design Resources"
+         "C:\Users\colli\OneDrive\Fall 2025\ECE 402\LED Driver\slum449\TPS92512_PSPICE_TRANS\tps92512_trans.dsn"
+         "STARTUP")
+      (Path "Design Resources"
+         "C:\Users\colli\OneDrive\Fall 2025\ECE 402\LED Driver\slum449\TPS92512_PSPICE_TRANS\tps92512_trans.dsn"
+         "STEADY_STATE")
+      (Path "Design Resources"
+         "C:\Users\colli\OneDrive\Fall 2025\ECE 402\LED Driver\slum449\TPS92512_PSPICE_TRANS\tps92512_trans.dsn"
+         "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "PSpice Resources")
+      (Select "PSpice Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 0 200 0 651"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 884 24 669")
+        (Scroll "0 0")
+        (Zoom "87")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\COLLI\ONEDRIVE\FALL 2025\ECE 402\LED DRIVER\SLUM449\TPS92512_PSPICE_TRANS\TPS92512_TRANS.DSN")
+      (Schematic "STARTUP")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 884 24 669")
+        (Scroll "0 10")
+        (Zoom "100"))
+      (Path
+         "C:\USERS\COLLI\ONEDRIVE\FALL 2025\ECE 402\LED DRIVER\SLUM449\TPS92512_PSPICE_TRANS\TPS92512_TRANS.DSN")
+      (Schematic "STEADY_STATE")
+      (Page "PAGE1")))
+  (MPSSessionName "colli")
+  (Folder "Logs"))

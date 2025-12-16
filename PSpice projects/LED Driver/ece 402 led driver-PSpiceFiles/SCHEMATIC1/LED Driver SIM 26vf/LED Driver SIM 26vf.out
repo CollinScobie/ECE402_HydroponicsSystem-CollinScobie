@@ -1,0 +1,320 @@
+
+**** 11/05/25 21:06:21 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LED Driver SIM 26vf"  [ C:\Users\Collin Scobie\OneDrive\Fall 2025\ECE 402\PSpice projects\LED Driver\ece 402
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "LED Driver SIM 26vf.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../led_model.lib" 
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ECE 402 LED DRIVER
+X_U1         N00781 N04596 0 N00098 N00991 N03775 N00825 0 N00658 N00472 N00275
++  TPS92512_TRANS PARAMS: STEADY=0
+R_R1         N00275 N00098  10M TC=0,0 
+C_C1         0 N00098  0.01u  TC=0,0 
+R_R2         N00472 N00275  160k TC=0,0 
+R_R3         0 N00472  19.3k TC=0,0 
+C_C2         0 N00275  10n  TC=0,0 
+C_C3         0 N00651  0.1u  TC=0,0 
+R_R4         0 N00658  200k TC=0,0 
+C_C4         N00825 N00781  0.1u  TC=0,0 
+L_L1         N00825 N01072  560u  
+D_D1         0 N00825 SS24 
+R_R5         N00991 N01079  1k TC=0,0 
+C_C5         N01079 N01072  22u  TC=0,0 
+R_R6         N01079 0  .3 TC=0,0 
+D_D2         N01274 N01079 Red_LED 
+D_D3         N01270 N01274 Red_LED 
+D_D4         N01072 N01270 Red_LED 
+V_V1         N00275 0 12Vdc
+V_V2         N03613 0 3.3Vdc
+R_R7         N03613 N03775  1k TC=0,0 
+R_R8         N00651 N04596  10k TC=0,0 
+C_C6         N01079 N01072  22u  TC=0,0 
+
+**** RESUMING "LED Driver SIM 26vf.cir" ****
+.END
+
+WARNING(ORPSIM-15223): Library file "C:\Users\Collin Scobie\OneDrive\Fall 2025\ECE 402\PSpice projects\LED Driver\led_model.lib" has changed since index file led_model.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Mon Nov  3 22:24:22 2025 to Wed Nov  5 21:04:11 2025.
+
+INFO(ORPSIM-15422): Making new index file led_model.ind for library file led_model.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 11/05/25 21:06:21 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LED Driver SIM 26vf"  [ C:\Users\Collin Scobie\OneDrive\Fall 2025\ECE 402\PSpice projects\LED Driver\ece 402
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Red_LED         
+          IS    1.000000E-18 
+           N    1.5          
+          BV  100            
+         IBV    1.000000E-03 
+          RS     .66         
+
+
+**** 11/05/25 21:06:21 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LED Driver SIM 26vf"  [ C:\Users\Collin Scobie\OneDrive\Fall 2025\ECE 402\PSpice projects\LED Driver\ece 402
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00098)   12.0000 (N00275)   12.0000 (N00472)    1.3571 (N00651) 55.99E-09     
+
+(N00658)     .5000 (N00781)    1.0173 (N00825)     .0209 (N00991) 3.002E-09     
+
+(N01072)     .0209 (N01079) 902.4E-15 (N01270)     .0139 (N01274)     .0070     
+
+(N03613)    3.3000 (N03775)    2.1072 (N04596) 55.99E-09 (X_U1.ISW) 11.98E-06   
+
+(X_U1.ENAB)    1.0000                 (X_U1.HDRV)     .0209                     
+
+(X_U1.SDWN)    0.0000                 (X_U1.SET0)    0.0000                     
+
+(X_U1.SET1)    1.0000                 (X_U1.PTDIM)    0.0000                    
+
+(X_U1.ISLOPE)    2.5051               (X_U1.SYSCLK)    0.0000                   
+
+(X_U1.U7_OUT)    0.0000               (X_U1.UVLO_N)    1.0000                   
+
+(X_U1.PWM_CLK)    0.0000              (X_U1.U2_RAMP) 1.250E-09                  
+
+(X_U1.U5_ISWF)    0.0000              (X_U1.U9_UVLO)    0.0000                  
+
+(X_U1.HDRV_PRE)    0.0000             (X_U1.PDIM_INT)    1.0000                 
+
+(X_U1.U5_ICTRL)-216.7E-06             (X_U1.BOOT_UVLO)    0.0000                
+
+(X_U1.N16528816)    1.0000            (X_U1.N16773263)    0.0000                
+
+(X_U1.N16783119) 48.02E-09            (X_U1.N16786335)    3.0000                
+
+(X_U1.N16789229)    0.0000            (X_U1.SDWN_TEST)    1.0000                
+
+(X_U1.U4_COMPSH)     .1680            (X_U1.U7_HDRVIN)    0.0000                
+
+(X_U1.U7_SDWN_N)    0.0000            (X_U1.U10_N00046)    2.1072               
+
+(X_U1.U10_N00148)    2.1000           (X_U1.U10_N00260)     .9000               
+
+(X_U1.U10_N00325)     .9000           (X_U1.U7_BOOT_OV)    1.0000               
+
+(X_U1.X_U13.YINT)    0.0000           (X_U1.X_U14.YINT)    0.0000               
+
+(X_U1.U1_ENAB_PRE)    1.0000          (X_U1.U4_N7407271)    2.3000              
+
+(X_U1.U4_N7407325)    0.0000          (X_U1.VREF_GM_INT)     .3000              
+
+(X_U1.U1_N16631887)    1.2500         (X_U1.U1_N16632005)    3.0000             
+
+(X_U1.U2_N16664740)    0.0000         (X_U1.U2_N16664744)    1.2500             
+
+(X_U1.U2_N16664858)     .5000         (X_U1.U2_N16664868)     .5000             
+
+(X_U1.U2_N16664888)    2.5000         (X_U1.U2_N16664960)    0.0000             
+
+(X_U1.U2_N16665088)    0.0000         (X_U1.U4_N16524070)     .0560             
+
+(X_U1.U4_PTDIM_INT)    0.0000         (X_U1.U5_N16489275) 697.1E-30             
+
+(X_U1.U5_N16489395)    0.0000         (X_U1.U5_N16589002)    6.0000             
+
+(X_U1.U5_N16611405)    0.0000         (X_U1.U5_N16635251)    0.0000             
+
+(X_U1.U5_N16642789)    0.0000         (X_U1.U5_N16643018)    0.0000             
+
+(X_U1.U5_N16644573)-7.237E-30         (X_U1.U7_N16768759)    6.5000             
+
+(X_U1.U7_N16768813)     .9964         (X_U1.U7_N16770425)    1.0000             
+
+(X_U1.U7_N16790418)    1.0000         (X_U1.U7_N16790440)    0.0000             
+
+(X_U1.U7_N16797695)    2.2000         (X_U1.U7_N16814586)    1.0000             
+
+(X_U1.U7_N16831494)   12.0000         (X_U1.U7_N16831498)    1.0000             
+
+(X_U1.U7_N16831511)    1.0000         (X_U1.U7_N16831549)    0.0000             
+
+(X_U1.U7_N16831555)    1.0000         (X_U1.U9_N16489522)    0.0000             
+
+(X_U1.U9_N16497188)    1.0000         (X_U1.U9_N16500007)    0.0000             
+
+(X_U1.U9_N16624961)    2.4900         (X_U1.X_U1_U1.Yint)    1.0000             
+
+(X_U1.X_U4_U1.YINT)    1.0000         (X_U1.X_U4_U2.YINT)    0.0000             
+
+(X_U1.X_U7_U5.Yint)    0.0000         (X_U1.X_U7_U6.Yint)    0.0000             
+
+(X_U1.U10_N16673573)    1.0000        (X_U1.U10_N16674076)    1.0000            
+
+(X_U1.U10_N16674227)    1.0000        (X_U1.U10_N16674542)    1.0000            
+
+(X_U1.U10_N16678633)    1.0000        (X_U1.U10_N16681290)    1.0000            
+
+(X_U1.U10_N16681612)    1.0000        (X_U1.U10_N16682353)    0.0000            
+
+(X_U1.U11_N16683042)    1.8000        (X_U1.U11_N16684761)   11.9930            
+
+(X_U1.U11_N16685028)    2.0000        (X_U1.U11_N16685063)     .3000            
+
+(X_U1.U5_CBC_ILIMIT)    1.0000        (X_U1.U7_BOOT_SW_ON)    0.0000            
+
+(X_U1.U7_N167687151)    6.5000        (X_U1.U7_N167976731)    2.2000            
+
+(X_U1.U7_SDWN_FORCE)    1.0000        (X_U1.U9_INDELAYED1)-22.71E-27            
+
+(X_U1.X_U10_U1.Yint)    1.0000        (X_U1.X_U10_U2.YINT)    1.0000            
+
+(X_U1.X_U10_U6.YINT)    1.0000        (X_U1.X_U10_U7.YINT)    0.0000            
+
+(X_U1.X_U5_U603.MY5)    5.0000        (X_U1.X_U5_U603.Qbr)    1.0000            
+
+(X_U1.X_U5_U603.Qqq)    -.0100        (X_U1.U4_PTDIM_N_INT)    1.0000           
+
+(X_U1.U4_QUICK_START)   50.0000       (X_U1.X_U2_U131.Yint)    0.0000           
+
+(X_U1.X_U2_U134.YINT)    0.0000       (X_U1.X_U2_U136.YINT)    0.0000           
+
+(X_U1.X_U5_U600.Yint)    0.0000       (X_U1.X_U5_U603.Qint)    -.0100           
+
+(X_U1.X_U5_U604.Yint)    1.0000       (X_U1.X_U5_U608.YINT)    0.0000           
+
+(X_U1.X_U5_U609.YINT)    0.0000       (X_U1.X_U5_U610.YINT)    0.0000           
+
+(X_U1.X_U7_U602.YINT)    1.0000       (X_U1.X_U7_U608.YINT)    0.0000           
+
+(X_U1.X_U7_U609.YINT)    1.0000       (X_U1.X_U7_U610.YINT)    1.0000           
+
+(X_U1.X_U7_U613.YINT)    0.0000       (X_U1.X_U7_U614.YINT)    0.0000           
+
+(X_U1.X_U7_U622.YINT)    0.0000       (X_U1.X_U7_U623.YINT)    1.0000           
+
+(X_U1.X_U7_U626.YINT)    0.0000       (X_U1.X_U7_U627.YINT)    1.0000           
+
+(X_U1.X_U9_U601.YINT)    0.0000       (X_U1.X_U9_U604.YINT)    0.0000           
+
+(X_U1.X_U9_U605.Yint)    0.0000       (X_U1.X_U9_U606.YINT)    1.0000           
+
+(X_U1.X_U9_U823.YINT)    0.0000       (X_U1.X_U9_U824.YINT)    0.0000           
+
+(X_U1.X_U2_U135.YINT1)    0.0000      (X_U1.X_U2_U135.YINT2)    0.0000          
+
+(X_U1.X_U2_U135.YINT3)    0.0000      (X_U1.X_U5_U603.Qqqd1)    0.0000          
+
+(X_U1.X_U7_U611.YINT1)    0.0000      (X_U1.X_U7_U611.YINT2)    0.0000          
+
+(X_U1.X_U7_U611.YINT3)    0.0000      (X_U1.X_U7_U612.YINT1)    1.0000          
+
+(X_U1.X_U7_U612.YINT2)    1.0000      (X_U1.X_U7_U612.YINT3)    1.0000          
+
+(X_U1.X_U7_U625.YINT1)    0.0000      (X_U1.X_U7_U625.YINT2)    0.0000          
+
+(X_U1.X_U7_U625.YINT3)    1.0000      (X_U1.X_U9_U822.YINT1)    0.0000          
+
+(X_U1.X_U9_U822.YINT2)    0.0000      (X_U1.X_U9_U822.YINT3)    1.0000          
+
+(X_U1.X_U5_U603.CLKdel)    1.0000     (X_U1.X_U5_U603.CLKint)    0.0000         
+
+(X_U1.X_U5_U603.X2.YINT)    0.0000    (X_U1.X_U5_U603.X1.YINT1)    0.0000       
+
+(X_U1.X_U5_U603.X1.YINT2)    0.0000   (X_U1.X_U5_U603.X1.YINT3)    1.0000       
+
+(X_U1.X_U5_U603.X3.YINT1)    0.0000   (X_U1.X_U5_U603.X3.YINT2)    0.0000       
+
+(X_U1.X_U5_U603.X3.YINT3)    0.0000   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.098E-03
+    V_V2        -1.193E-03
+    X_U1.V_U1_V2   0.000E+00
+    X_U1.V_U4_V6  -2.133E-12
+    X_U1.V_U4_V5   1.690E-13
+    X_U1.V_U4_V7   0.000E+00
+    X_U1.V_V49   0.000E+00
+    X_U1.V_V46   0.000E+00
+    X_U1.V_U7_V49   0.000E+00
+    X_U1.V_U2_V44  -2.500E-06
+    X_U1.V_U2_V46   0.000E+00
+    X_U1.V_U2_V45  -1.275E-06
+    X_U1.V_U11_V1   1.019E-03
+    X_U1.V_U9_V2   0.000E+00
+    X_U1.V_V48  -3.001E-12
+    X_U1.V_U5_V80   0.000E+00
+    X_U1.V_V47   0.000E+00
+    X_U1.V_U10_V1  -1.000E-07
+    X_U1.X_U7_H1.VH_U7_H1   1.198E-05
+    X_U1.X_U2_F2.VF_U2_F2  -2.500E-06
+    X_U1.X_U2_F1.VF_U2_F1  -2.500E-06
+    X_U1.X_U5_U603.V1  -5.011E-12
+
+    TOTAL POWER DISSIPATION   1.53E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/05/25 21:06:21 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LED Driver SIM 26vf"  [ C:\Users\Collin Scobie\OneDrive\Fall 2025\ECE 402\PSpice projects\LED Driver\ece 402
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        4.28
+
